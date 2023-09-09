@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="main">
+        <h1>Welcome to the Calculator</h1>
+        <div id="container">
+            <div id="input"><input type="text" name="" id="inp"></div>
+            <div id="row">
+                <button id="button">AC</button>
+                <button id="button">DEL</button>
+                <button id="button">%</button>
+                <button id="button">*</button>
+
+            </div>
+
+            <div id="row">
+                <button id="button">7</button>
+                <button id="button">8</button>
+                <button id="button">9</button>
+                <button id="button">/</button>
+
+            </div>
+            <div id="row">
+                <button id="button">4</button>
+                <button id="button">5</button>
+                <button id="button">5</button>
+
+                <button id="button">-</button>
+
+            </div>
+            <div id="row">
+                <button id="button">1</button>
+                <button id="button">2</button>
+                <button id="button">3</button>
+                <button id="button">+</button>
+
+            </div>
+            <div id="row">
+
+                <button id="button">0</button>
+                <button id="button">00</button>
+                <button id="button">**</button>
+                <button id="button">=</button>
+            </div>
+        </div>
+    </main>
+    <!-- <script>
+       let string=""
+let buttons=document.querySelectorAll('#button')
+Array.from(buttons).forEach((button)=>{
+    button.addEventListener('click', (e)=>{
+        if(e.target.innerHTML == '='){
+            string=eval(string);
+            document.querySelector('#inp').value=string;
+        }
+        else if(e.target.innerHTML =='AC'){
+            string="";
+            document.querySelector('#inp').value=string;
+        }
+        else if(e.target.innerHTML == 'DEL'){
+     
+        string=string.slice(0,-1);
+        document.querySelector('#inp').value=string;        
+
+        }
+        else{
+            console.log(e.target)
+            string=string+e.target.innerHTML;
+            document.querySelector('#inp').value=string;        }
+
+    })
+})
+    </script> -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
